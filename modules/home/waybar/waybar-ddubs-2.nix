@@ -60,13 +60,13 @@ in
             interval = 5;
             format = " {}%";
             tooltip = true;
-            on-click = "${terminal} -e btop";
+            on-click = "${terminal} -e bottom";
           };
           "cpu" = {
             interval = 5;
             format = " {usage:2}%";
             tooltip = true;
-            on-click = "${terminal} -e btop";
+            on-click = "${terminal} -e bottom";
           };
           "disk" = {
             format = " {free}";
@@ -80,7 +80,7 @@ in
             format-wifi = " {bandwidthDownBits}";
             format-disconnected = "󰤮";
             tooltip = false;
-            on-click = "${terminal} -e btop";
+            on-click = "${terminal} -e bottom";
           };
           "tray" = {
             spacing = 12;
