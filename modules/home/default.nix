@@ -18,8 +18,6 @@ in {
   imports =
     [
       ./amfora.nix
-      ./bash.nix
-      ./bashrc-personal.nix
       ./cli
       ./overview.nix
       ./python.nix
