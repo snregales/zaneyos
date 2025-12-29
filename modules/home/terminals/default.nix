@@ -11,6 +11,7 @@ in {
   imports =
     [
       ./kitty.nix
+      ./zellij.nix
     ]
     ++ (
       if weztermEnable
