@@ -13,6 +13,7 @@
 in {
   imports = [
     ./amfora.nix
+    ./brave.nix
     ./cli
     ./claude.nix
     ./overview.nix
