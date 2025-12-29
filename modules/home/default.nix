@@ -24,23 +24,15 @@ in {
       ./amfora.nix
       ./bash.nix
       ./bashrc-personal.nix
+      ./cli
       ./overview.nix
       ./python.nix
-      ./cli/bat.nix
-      ./cli/btop.nix
-      ./cli/bottom.nix
-      ./cli/cava.nix
       ./emoji.nix
       ./eza.nix
       ./fastfetch
-      ./cli/fzf.nix
-      ./cli/gh.nix
-      ./cli/git.nix
       ./gtk.nix
-      ./cli/htop.nix
       ./hyprland
       ./terminals/kitty.nix
-      ./cli/lazygit.nix
       ./obs-studio.nix
       #./editors/nvf.nix
       ./editors/nixvim.nix
