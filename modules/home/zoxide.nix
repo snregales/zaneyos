@@ -1,4 +1,7 @@
-_: {
+_: let
+  "cd.." = "cd ..";
+  ".." = "cd ..";
+in {
   programs = {
     zoxide = {
       enable = true;
@@ -7,6 +10,12 @@ _: {
       options = [
         "--cmd cd"
       ];
+    };
+    zsh.shellAliases = {
+      inherit "cd.." "..";
+    };
+    bash.shellAliases = {
+      inherit "cd.." "..";
     };
   };
 }
