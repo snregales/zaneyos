@@ -7,5 +7,6 @@ _: {
     ./gh.nix
     ./git.nix
     ./lazygit.nix
+    ./atuin.nix
   ];
 }
