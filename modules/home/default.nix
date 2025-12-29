@@ -14,6 +14,7 @@ in {
   imports = [
     ./amfora.nix
     ./cli
+    ./claude.nix
     ./overview.nix
     ./python.nix
     ./emoji.nix
