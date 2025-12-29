@@ -8,10 +8,6 @@
     tmuxEnable
     waybarChoice
     weztermEnable
-    vscodeEnable
-    helixEnable
-    doomEmacsEnable
-    antigravityEnable
     ;
   # Select bar module based on barChoice
   barModule =
@@ -34,9 +30,7 @@ in {
       ./hyprland
       ./terminals/kitty.nix
       ./obs-studio.nix
-      #./editors/nvf.nix
-      ./editors/nixvim.nix
-      ./editors/nano.nix
+      ./editors
       ./rofi
       ./qt.nix
       ./scripts
@@ -55,29 +49,6 @@ in {
       ./zoxide.nix
       ./zsh.nix
     ]
-    ++ (
-      if helixEnable
-      then [./editors/evil-helix.nix]
-      else []
-    )
-    ++ (
-      if vscodeEnable
-      then [./editors/vscode.nix]
-      else []
-    )
-    ++ (
-      if antigravityEnable
-      then [./editors/antigravity.nix]
-      else []
-    )
-    ++ (
-      if doomEmacsEnable
-      then [
-        ./editors/doom-emacs-install.nix
-        ./editors/doom-emacs.nix
-      ]
-      else []
-    )
     ++ (
       if weztermEnable
       then [./terminals/wezterm.nix]
