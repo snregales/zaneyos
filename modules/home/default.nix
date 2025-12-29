@@ -49,6 +49,7 @@ in {
       ./qt.nix
       ./scripts
       ./scripts/gemini-cli.nix
+      ./starship-ddubs-1.nix
       ./stylix.nix
       ./swappy.nix
       ./swaync.nix
@@ -60,7 +61,7 @@ in {
       ./yazi
       ./zen-browser.nix
       ./zoxide.nix
-      ./zsh
+      ./zsh.nix
     ]
     ++ (
       if helixEnable

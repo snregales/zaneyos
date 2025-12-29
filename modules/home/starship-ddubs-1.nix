@@ -8,7 +8,7 @@
   background-alt = "#${config.lib.stylix.colors.base01}";
 in {
   programs.starship = {
-    enable = false;
+    enable = true;
     settings = {
       add_newline = false;
       format = lib.concatStrings [
