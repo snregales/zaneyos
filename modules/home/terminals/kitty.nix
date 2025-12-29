@@ -10,7 +10,9 @@
     # Upstream test failures resolved; use default kitty package (>= 0.44).
     package = pkgs.kitty;
     settings = {
-      font_family = "Maple Mono NF";
+      dynamic_background_opacity = true;
+      background_blur = 5;
+      font_family = "FiraCode Mono NF";
       font_size = 12;
       wheel_scroll_min_lines = 1;
       window_padding_width = 4;
@@ -25,17 +27,18 @@
       tab_bar_edge = "top";
       tab_bar_margin_width = 0;
       tab_bar_style = "powerline";
-      #tab_bar_style = "fade";
       enabled_layouts = "splits";
       open_url_with_default = true;
       detect_urls = true;
       allow_remote_control = true;
     };
 
-    shellIntegration.enableZshIntegration = true;
-    shellIntegration.enableFishIntegration = true;
-    shellIntegration.enableBashIntegration = true;
-    shellIntegration.mode = "enabled";
+    shellIntegration = {
+      enableZshIntegration = true;
+      enableFishIntegration = true;
+      enableBashIntegration = true;
+      mode = "enabled";
+    };
 
     extraConfig = ''
 
