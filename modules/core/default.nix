@@ -25,6 +25,7 @@ in {
     )
     ./security.nix
     ./services.nix
+    ./sops.nix
     ./stylix.nix
     ./syncthing.nix
     ./system.nix

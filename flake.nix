@@ -10,6 +10,10 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sops-nix = {
+      url = "github:mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixpkgs.url = "github:nixos/nixpkgs/release-25.11";
     nvf.url = "github:notashelf/nvf";
     stylix.url = "github:danth/stylix/release-25.11";
@@ -61,6 +65,7 @@
           inherit username;
           inherit host;
           inherit profile; # keep using the let-bound profile for modules/scripts
+          rootDir = ./.;
         };
         modules = [
           ./modules/core/overlays.nix

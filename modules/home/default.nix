@@ -30,6 +30,7 @@ in {
     ./qt.nix
     ./scripts
     ./scripts/gemini-cli.nix
+    ./sops.nix
     ./starship-ddubs-1.nix
     ./stylix.nix
     ./swappy.nix
