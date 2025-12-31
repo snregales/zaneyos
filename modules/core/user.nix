@@ -31,6 +31,7 @@ in {
     mutableUsers = false;
     users.${username} = {
       isNormalUser = true;
+      hashedPasswordFile = config.sops.secrets."${username}".path;
       description = "${gitUsername}";
       extraGroups = [
         "adbusers"
